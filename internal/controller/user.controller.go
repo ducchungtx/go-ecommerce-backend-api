@@ -2,7 +2,7 @@ package controller
 
 import (
 	"goecommerce/internal/service"
-	"net/http"
+	"goecommerce/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )
@@ -18,8 +18,6 @@ func NewUserController() *UserController {
 }
 
 func (uc *UserController) GetUserById(c *gin.Context) {
-
-	c.JSON(http.StatusOK, gin.H{
-		"message": uc.userService.GetUserInfo(),
-	})
+	// response.SuccessResponse(c, 20001, []string{"user1", "user2"})
+	response.ErrorResponse(c, 20003, "Email is invalid")
 }
