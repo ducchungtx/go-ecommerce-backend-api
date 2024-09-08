@@ -3,6 +3,7 @@ package routers
 import (
 	"fmt"
 	c "goecommerce/internal/controller"
+	"goecommerce/internal/middlewares"
 
 	"github.com/gin-gonic/gin"
 )
@@ -31,7 +32,7 @@ func CC(c *gin.Context) {
 
 func NewRouter() *gin.Engine {
 	r := gin.Default()
-	r.Use(AA(), BB(), CC)
+	r.Use(middlewares.AuthMiddleware(), BB(), CC)
 
 	v1 := r.Group("/v1/2024")
 	{
