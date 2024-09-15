@@ -1,5 +1,10 @@
 package initialize
 
+import (
+	"goecommerce/global"
+	"goecommerce/pkg/logger"
+)
+
 func InitLogger() {
-	// initialize logger
+	global.Logger = logger.NewLogger(global.Config.Logger)
 }

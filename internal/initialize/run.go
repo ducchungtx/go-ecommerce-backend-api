@@ -3,6 +3,8 @@ package initialize
 import (
 	"fmt"
 	"goecommerce/global"
+
+	"go.uber.org/zap"
 )
 
 func Run() {
@@ -12,6 +14,7 @@ func Run() {
 	fmt.Println("Loading configurations mysql", m.Username, m.Password)
 
 	InitLogger()
+	global.Logger.Info("Config loaded", zap.String("ok", "success"))
 	InitMysql()
 	InitRedis()
 
