@@ -1,1 +1,33 @@
 2024-09-15T09:37:53.426+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T10:33:44.733+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T10:33:44.736+0700	ERROR	initialize/mysql.go:16	Failed to connect to mysql	{"error": "Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)"}
+goecommerce/internal/initialize.checkErrorPanics
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/internal/initialize/mysql.go:16
+goecommerce/internal/initialize.InitMysql
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/internal/initialize/mysql.go:31
+goecommerce/internal/initialize.Run
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/internal/initialize/run.go:18
+main.main
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/cmd/server/main.go:8
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+2024-09-15T10:34:24.019+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T10:34:24.022+0700	ERROR	initialize/mysql.go:16	Failed to connect to mysql	{"error": "Error 1049 (42000): Unknown database 'shopdevgo'"}
+goecommerce/internal/initialize.checkErrorPanics
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/internal/initialize/mysql.go:16
+goecommerce/internal/initialize.InitMysql
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/internal/initialize/mysql.go:31
+goecommerce/internal/initialize.Run
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/internal/initialize/run.go:18
+main.main
+	/Users/mac/Desktop/Projects/Learn/go/go-ecommerce-backend-api/cmd/server/main.go:8
+runtime.main
+	/usr/local/go/src/runtime/proc.go:272
+2024-09-15T10:37:14.861+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T10:37:14.863+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
+2024-09-15T10:38:06.774+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T10:38:06.777+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
+2024-09-15T10:42:38.565+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T10:42:38.568+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
+2024-09-15T10:45:26.106+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T10:45:26.109+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
