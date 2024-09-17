@@ -31,3 +31,10 @@ runtime.main
 2024-09-15T10:42:38.568+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
 2024-09-15T10:45:26.106+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
 2024-09-15T10:45:26.109+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
+2024-09-15T20:22:47.598+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T20:22:47.619+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
+2024-09-15T20:22:47.745+0700	INFO	initialize/redis.go:29	Successfully connected to redis
+2024-09-15T20:34:22.548+0700	INFO	initialize/run.go:17	Config loaded	{"ok": "success"}
+2024-09-15T20:34:22.554+0700	INFO	initialize/mysql.go:32	Successfully connected to mysql
+2024-09-15T20:34:22.690+0700	INFO	initialize/redis.go:29	Successfully connected to redis
+2024-09-15T20:34:22.691+0700	INFO	initialize/redis.go:47	value score is::	{"score": "100"}
