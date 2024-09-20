@@ -2,19 +2,23 @@ package manager
 
 import "github.com/gin-gonic/gin"
 
-type UserRouter struct{}
+type AdminRouter struct{}
 
-func (pr *UserRouter) InitUserRouter(Router *gin.RouterGroup) {
+func (pr *AdminRouter) InitAdminRouter(Router *gin.RouterGroup) {
 	// public route
-	userRouterPublic := Router.Group("/user")
+	adminRouterPublic := Router.Group("/admin")
 	{
-		userRouterPublic.POST("/register")
-		userRouterPublic.GET("/otp")
+		adminRouterPublic.POST("/login")
 	}
 
 	// private route
-	userRouterPrivate := Router.Group("/user")
+	adminRouterPrivate := Router.Group("/admin/user")
+	// adminRouterPrivate.Use(limiter())
+	// adminRouterPrivate.Use(Authen())
+	// adminRouterPrivate.Use(Permission())
+
 	{
-		userRouterPrivate.GET("/profile")
+		adminRouterPrivate.GET("/active_user")
+
 	}
 }
