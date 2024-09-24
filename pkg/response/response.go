@@ -13,20 +13,19 @@ type ResponseData struct {
 }
 
 // success response
-func SuccessResponse(c *gin.Context, code int, data interface{}) ResponseData {
+
+func SuccessResponse(c *gin.Context, code int, data interface{}) {
 	c.JSON(http.StatusOK, ResponseData{
-		Code:    20001,
+		Code:    code,
 		Message: msg[code],
 		Data:    data,
 	})
-	return ResponseData{} // Add a return statement
 }
 
-func ErrorResponse(c *gin.Context, code int, message string) ResponseData {
+func ErrorResponse(c *gin.Context, code int, massage string) {
 	c.JSON(http.StatusOK, ResponseData{
 		Code:    code,
-		Message: message,
+		Message: msg[code],
 		Data:    nil,
 	})
-	return ResponseData{} // Add a return statement
 }
